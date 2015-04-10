@@ -7,6 +7,7 @@ dataSet <- read.table("household_power_consumption.txt",sep=";",as.is=TRUE,col.n
 
 
 #Plot
+windows(width=480, height=480)
 par(mfrow = c(2, 2))
 plot(as.numeric(dataSet[,3]),type="l",xlab="",xaxt="n",ylab="Global Active Power (kilowatts)")
 axis(1,at=c(1,1440,2880),labels=c("Thu","Fri","Sat"))
